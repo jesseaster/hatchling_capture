@@ -9,10 +9,8 @@ class CapturePic:
         config.read('settings.ini')
         self.camera_picker = int(config['Camera']['camera_picker'])
 
-        self.imageWidth = 3000
-        self.imageHeight = 2100
-        # self.imageWidth = 320
-        # self.imageHeight = 640
+        self.imageWidth = int(config['Camera']['image_width'])
+        self.imageHeight = int(config['Camera']['image_height'])
 
         # CAP_PROP_EXPOSURE Exposure Time
         # -4       80 ms
